@@ -15,4 +15,4 @@ for(i in 1:1000){ # we are running 1000 times - i.e., 1000 decision trees
   pred1=(predict(dt,test))  # Predict based on the tree just built
   test$prediction=(test$prediction+pred1)  # Add predictions of all the iterations of previously built decision trees
 }
-test$prediction = (test$prediction)/1000  
+test$prediction = (test$prediction)/1000
